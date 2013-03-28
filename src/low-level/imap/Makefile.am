@@ -43,6 +43,7 @@ etpaninclude_HEADERS = \
 	idle.h \
 	namespace.h namespace_parser.h namespace_sender.h namespace_types.h \
 	xlist.h xgmlabels.h
+	mailimap_sort.h mailimap_sort_types.h
 
 AM_CPPFLAGS = -I$(top_builddir)/include \
 	-I$(top_srcdir)/src/data-types
@@ -83,3 +84,4 @@ libimap_la_SOURCES = \
 	namespace_types.c namespace_types.h \
 	xlist.c xlist.h \
 	xgmlabels.c xgmlabels.h
+	mailimap_sort.c mailimap_sort_types.c
