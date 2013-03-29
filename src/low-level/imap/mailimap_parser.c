@@ -1287,7 +1287,7 @@ mailimap_custom_string_parse(mailstream * fd, MMAPString * buffer,
 
 
 
-static int
+int
 mailimap_nz_number_alloc_parse(mailstream * fd, MMAPString * buffer,
 			       size_t * indx,
 			       uint32_t ** result,

@@ -141,6 +141,12 @@ mailimap_number_parse(mailstream * fd, MMAPString * buffer,
 int
 mailimap_nz_number_parse(mailstream * fd, MMAPString * buffer,
 			 size_t * indx, uint32_t * result);
+  int
+  mailimap_nz_number_alloc_parse(mailstream * fd, MMAPString * buffer,
+                                 size_t * indx,
+                                 uint32_t ** result,
+                                 size_t progr_rate,
+                                 progress_function * progr_fun);
 
 int
 mailimap_struct_list_parse(mailstream * fd, MMAPString * buffer,
